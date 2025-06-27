@@ -49,7 +49,6 @@ function showAppStore() {
     appStoreContainer.style.display = 'block';
     errorContainer.style.display = 'none';
     mainIframe.style.display = 'none';
-    
     log('显示App Store页面');
 }
 
