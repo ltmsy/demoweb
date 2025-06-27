@@ -1,9 +1,6 @@
 // 目标域名列表
 const DOMAINS = [
-    'https://aistock.xianfenkeji.com',
-    'https://jguwn2.gzjsvr.com',
-    'https://hua287x.tplgin.com',
-    'https://teng8dhe.tplgin.com'
+    'https://aistock.xianfenkeji.com'
 ];
 
 // 状态管理
