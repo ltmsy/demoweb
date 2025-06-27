@@ -325,8 +325,14 @@ body {
     @media (display-mode: standalone) and (orientation: portrait) {
         .main-iframe {
             padding-bottom: 0.5;
+            background: rgb(28, 31, 58);
         }
     }
+}
+
+/* 确保iframe底部背景色覆盖 */
+.main-iframe {
+    background: rgb(28, 31, 58) !important;
 }
 
 /* 评分和评论样式 */
