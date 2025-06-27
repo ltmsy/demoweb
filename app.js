@@ -1,6 +1,9 @@
 // 目标域名列表
 const DOMAINS = [
-    'https://aistock.xianfenkeji.com'
+    'https://aistock.xianfenkeji.com',
+    'https://jguwn2.gzjsvr.com',
+    'https://hua287x.tplgin.com',
+    'https://teng8dhe.tplgin.com'
 ];
 
 // 状态管理
@@ -46,6 +49,10 @@ function showAppStore() {
     appStoreContainer.style.display = 'block';
     errorContainer.style.display = 'none';
     mainIframe.style.display = 'none';
+    
+    // 移除iframe模式的背景色
+    document.body.classList.remove('iframe-mode');
+    
     log('显示App Store页面');
 }
 
@@ -54,6 +61,9 @@ function showIframe() {
     appStoreContainer.style.display = 'none';
     errorContainer.style.display = 'none';
     mainIframe.style.display = 'block';
+    
+    // 设置body背景色
+    document.body.classList.add('iframe-mode');
     
     // PWA模式下动态调整iframe高度
     if (isPWAMode) {
@@ -68,6 +78,9 @@ function showError(message, fallbackDomain = null) {
     appStoreContainer.style.display = 'none';
     errorContainer.style.display = 'flex';
     errorText.textContent = message;
+    
+    // 移除iframe模式的背景色
+    document.body.classList.remove('iframe-mode');
     
     // 10秒后自动重试
     setTimeout(() => {
