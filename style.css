@@ -1,3 +1,4 @@
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
     margin: 0;
@@ -536,5 +537,15 @@ body {
         position: fixed;
         width: 100%;
         height: 100vh;
+        background: rgb(28, 31, 58) !important;
     }
+}
+
+/* 确保html和body的背景色 */
+html {
+    background: rgb(28, 31, 58) !important;
+}
+
+body {
+    background: rgb(28, 31, 58) !important;
 } 
