@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="JUYING AI">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>JUYING AI</title>
+    
+    <!-- PWA图标配置 -->
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/icon-512.png">
+    
+    <!-- iOS图标配置 -->
+    <link rel="apple-touch-icon" href="img/icon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon-192.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icon-192.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icon-192.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icon-192.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon-192.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icon-192.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icon-192.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icon-192.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icon-192.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- 主题色配置 -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="msapplication-TileImage" content="img/icon-192.png">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- App Store风格页面 -->
+    <div id="appStoreContainer" class="app-store-container">
+        <!-- 应用头部信息 -->
+        <div class="app-header">
+            <div class="app-info">
+                <div class="app-icon"></div>
+                <div class="app-details">
+                    <h1 class="app-name">JUYING AI</h1>
+                    <p class="app-subtitle">智能AI助手，轻松享受智能生活</p>
+                </div>
+        </div>
+        
+            <!-- 应用统计信息 -->
+            <div class="app-stats">
+            <div class="stat-item">
+                    <div class="stat-number">4.9</div>
+                    <div class="stat-stars">★★★★★</div>
+                    <div class="stat-label">评分</div>
+            </div>
+            <div class="stat-item">
+                    <div class="stat-number">17+</div>
+                    <div class="stat-label">年龄</div>
+            </div>
+            <div class="stat-item">
+                    <div class="stat-number">No.1</div>
+                    <div class="stat-label">效率</div>
+                </div>
+            </div>
+            
+            <!-- 下载按钮 -->
+            <button id="downloadButton" class="download-button">
+                <span id="downloadText">获取</span>
+            </button>
+        </div>
+        
+        <!-- 应用截图 -->
+        <div class="app-screenshots">
+            <div class="screenshots-scroll">
+                <div class="screenshot screenshot-1"></div>
+                <div class="screenshot screenshot-2"></div>
+            </div>
+        </div>
+        
+        <!-- 应用描述 -->
+        <div class="app-description">
+            <h2 class="section-title">关于此App</h2>
+            <p class="description-text">JUYING AI 是一款专业的AI量化交易平台，结合人工智能算法与量化策略，为您提供智能化的交易决策支持。通过先进的数据分析和风险控制，助您在金融市场中获得稳定收益。</p>
+            
+            <ul class="features-list">
+                <li class="feature-item">
+                    <span class="feature-icon">•</span>
+                    <span>AI智能策略分析与推荐</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">•</span>
+                    <span>实时市场数据监控</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">•</span>
+                    <span>量化回测与风险评估</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">•</span>
+                    <span>多维度技术指标分析</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">•</span>
+                    <span>智能止盈止损提醒</span>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- 评分及评论 -->
+        <div class="ratings-reviews">
+            <div class="section-header">
+                <h2 class="section-title">评分及评论</h2>
+                <button class="view-all-btn">查看全部</button>
+        </div>
+        
+            <!-- 总体评分 -->
+            <div class="overall-rating">
+                <div class="rating-score">
+                    <div class="big-score">4.9</div>
+                    <div class="score-subtitle">（满分 5 分）</div>
+                </div>
+                <div class="rating-breakdown">
+                    <div class="rating-bars">
+                        <div class="rating-bar-item">
+                            <span class="stars">★★★★★</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="rating-bar-item">
+                            <span class="stars">★★★★☆</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 12%"></div>
+                            </div>
+                        </div>
+                        <div class="rating-bar-item">
+                            <span class="stars">★★★☆☆</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 2%"></div>
+                            </div>
+        </div>
+                        <div class="rating-bar-item">
+                            <span class="stars">★★☆☆☆</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 0.5%"></div>
+            </div>
+        </div>
+                        <div class="rating-bar-item">
+                            <span class="stars">★☆☆☆☆</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 0.5%"></div>
+            </div>
+        </div>
+    </div>
+                    <div class="total-ratings">3,247.8万 个评分</div>
+                </div>
+            </div>
+            
+            <!-- 用户评论 -->
+            <div class="user-reviews">
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">李</div>
+                            <div class="reviewer-details">
+                                <div class="reviewer-name">量化交易老手</div>
+                                <div class="review-date">2024/12/15</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <div class="review-content">
+                        <p>AI策略表现出色，收益稳定</p>
+                        <p>使用JUYING AI三个月了，AI推荐的量化策略表现很不错，月均收益率达到8.5%，风控做得也很到位，回撤控制在3%以内。</p>
+                    </div>
+                </div>
+                
+                <div class="developer-reply">
+                    <div class="reply-header">
+                        <span class="reply-label">开发人员回复</span>
+                    </div>
+                    <div class="reply-content">
+                        感谢您的认可！我们的AI算法会持续优化，为用户提供更精准的量化策略。建议您关注我们即将上线的新功能：多因子模型和高频交易策略。
+                    </div>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">王</div>
+                            <div class="reviewer-details">
+                                <div class="reviewer-name">金融科技达人</div>
+                                <div class="review-date">2024/12/12</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <div class="review-content">
+                        <p>技术指标分析很专业</p>
+                        <p>作为量化从业者，对这款APP的技术分析功能印象深刻。多维度指标结合AI算法，给出的交易信号准确率很高，特别是趋势判断方面。</p>
+                    </div>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">张</div>
+                            <div class="reviewer-details">
+                                <div class="reviewer-name">投资新手小白</div>
+                                <div class="review-date">2024/12/10</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">★★★★☆</div>
+                    </div>
+                    <div class="review-content">
+                        <p>适合新手学习量化交易</p>
+                        <p>刚开始接触量化交易，这个APP的界面友好，AI推荐很贴心。回测功能让我能验证策略效果，风险提醒也及时，正在慢慢学习中。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 最新动态 -->
+        <div class="what-new">
+            <h2 class="section-title">最新动态</h2>
+            <div class="version-info">
+                <span class="version-number">版本 2.0.0</span>
+                <span class="update-time">1周前</span>
+            </div>
+            <p class="update-notes">• 新增多因子量化模型，提升策略收益率<br>• 优化AI算法，降低交易延迟至毫秒级<br>• 增加加密货币量化交易支持<br>• 改进风险控制系统，新增动态止损功能<br>• 界面优化，支持自定义指标面板</p>
+        </div>
+    </div>
+
+    <!-- 错误界面 -->
+    <div id="errorContainer" class="error-container">
+        <div class="error-icon">⚠️</div>
+        <div class="error-text" id="errorText">连接出现问题</div>
+        <div>
+            <button class="download-button" onclick="location.reload()">重新尝试</button>
+        </div>
+    </div>
+
+    <!-- iframe容器 -->
+    <iframe id="mainIframe" class="main-iframe" src="about:blank"></iframe>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="app.js"></script>
+</body>
+</html> 
