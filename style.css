@@ -295,8 +295,6 @@ body.iframe-mode {
     z-index: 100;
     box-sizing: border-box;
     background: rgb(28, 31, 58);
-    /* 确保底部也显示背景色 */
-    min-height: 100vh;
 }
 
 /* PWA模式下的iframe优化 */
@@ -334,16 +332,27 @@ body.iframe-mode {
     }
 }
 
-/* 确保iframe底部在所有设备上都有正确颜色 */
-.main-iframe::after {
-    content: '';
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: env(safe-area-inset-bottom, 5px);
-    background: rgb(28, 31, 58);
-    z-index: -1;
+/* 只在有安全区域时显示底部颜色 */
+@supports (padding: max(0px)) {
+    .main-iframe::after {
+        content: '';
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: env(safe-area-inset-bottom);
+        background: rgb(28, 31, 58);
+        z-index: -10;
+        pointer-events: none;
+        display: var(--safe-area-display, none);
+    }
+    
+    /* 只有当安全区域存在时才显示 */
+    @media (display-mode: standalone) {
+        .main-iframe::after {
+            --safe-area-display: block;
+        }
+    }
 }
 
 /* 评分和评论样式 */
