@@ -11,10 +11,7 @@ body {
     position: relative;
 }
 
-/* 当iframe显示时，设置body背景色 */
-body.iframe-mode {
-    background: rgb(28, 31, 58);
-}
+/* 移除body背景色设置，避免影响app内容 */
 
 .app-store-container {
     position: fixed;
@@ -535,9 +532,5 @@ body.iframe-mode {
         position: fixed;
         width: 100%;
         height: 100vh;
-    }
-    
-    body.iframe-mode {
-        background: rgb(28, 31, 58);
     }
 } 
