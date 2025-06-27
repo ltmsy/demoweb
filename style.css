@@ -297,7 +297,6 @@ body.iframe-mode {
     background: rgb(28, 31, 58);
     /* 确保底部也显示背景色 */
     min-height: 100vh;
-    padding-bottom: env(safe-area-inset-bottom, 0);
 }
 
 /* PWA模式下的iframe优化 */
@@ -308,7 +307,6 @@ body.iframe-mode {
         width: 100%;
         height: 100vh;
         padding-top: env(safe-area-inset-top, 0);
-        padding-bottom: env(safe-area-inset-bottom, 0);
         box-sizing: border-box;
         background: rgb(28, 31, 58);
     }
@@ -321,7 +319,6 @@ body.iframe-mode {
             top: 0;
             height: 100vh;
             padding-top: env(safe-area-inset-top, 44px);
-            padding-bottom: env(safe-area-inset-bottom, 2px);
             box-sizing: border-box;
             background: rgb(28, 31, 58);
         }
@@ -332,7 +329,6 @@ body.iframe-mode {
 @supports (-webkit-touch-callout: none) {
     @media (display-mode: standalone) and (orientation: portrait) {
         .main-iframe {
-            padding-bottom: 0.5px;
             background: rgb(28, 31, 58);
         }
     }
@@ -345,7 +341,7 @@ body.iframe-mode {
     bottom: 0;
     left: 0;
     right: 0;
-    height: env(safe-area-inset-bottom, 20px);
+    height: env(safe-area-inset-bottom, 5px);
     background: rgb(28, 31, 58);
     z-index: -1;
 }
